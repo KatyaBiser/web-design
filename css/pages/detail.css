@@ -20,6 +20,13 @@
   display: block;
 }
 
+/* Fixed size for therapist images - slightly bigger than card size */
+.detail__image--therapist {
+  width: 280px;
+  height: 280px;
+  border: 5px solid var(--primary-light);
+}
+
 .detail__title {
   font-size: var(--font-size-h1);
   margin-bottom: var(--spacing-xs);
