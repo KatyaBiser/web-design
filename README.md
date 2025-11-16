@@ -10,7 +10,9 @@ The website concept is intentionally ironic - it's about recovering from AI depe
 
 ## Live Website
 
-Open `html/index.html` in any modern web browser to view the website.
+**Local Development:** Open `html/index.html` in any modern web browser to view the website.
+
+**GitHub Pages:** This project is configured for automatic deployment to GitHub Pages. Once pushed to GitHub, the site will be available at: `https://[your-username].github.io/[repository-name]/`
 
 ## Project Structure
 
@@ -155,6 +157,39 @@ This is a **student project** created for educational purposes to demonstrate:
 - Following web standards and best practices
 
 **No AI was used to generate the core structure or styling.** While AI tools may have been consulted for syntax questions or best practices, all architectural decisions, design choices, and implementation were done manually to ensure deep understanding of the fundamentals.
+
+## Deployment to GitHub Pages
+
+This project includes automated deployment to GitHub Pages via GitHub Actions.
+
+### Setup Instructions
+
+1. **Push to GitHub:**
+   ```bash
+   git add .
+   git commit -m "Initial commit"
+   git push origin main
+   ```
+
+2. **Enable GitHub Pages:**
+   - Go to your repository settings on GitHub
+   - Navigate to **Settings** → **Pages**
+   - Under "Build and deployment" → "Source", select **GitHub Actions**
+
+3. **Automatic Deployment:**
+   - The workflow (`.github/workflows/deploy.yml`) will automatically trigger on every push to `main`
+   - It will copy CSS and images into the html folder and deploy the site
+   - Your site will be live at: `https://[username].github.io/[repo-name]/`
+
+### How It Works
+
+The GitHub Actions workflow:
+1. Checks out the repository
+2. Copies `css/` and `images/` folders into `html/` directory
+3. Updates paths in HTML files (removes `../` prefixes)
+4. Deploys the `html/` folder as the root of your GitHub Pages site
+
+This keeps your local development structure clean while ensuring proper paths for production.
 
 ## Future Enhancements
 
