@@ -12,13 +12,12 @@
 }
 
 .detail__image {
-  width: 250px;
-  height: 250px;
+  width: 100%;
+  height: auto;
   border-radius: var(--border-radius);
   object-fit: cover;
   margin: 0 auto var(--spacing-md);
   display: block;
-  border: 6px solid var(--primary-light);
 }
 
 .detail__title {
