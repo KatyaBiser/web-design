@@ -399,6 +399,67 @@ a:focus {
 }
 
 /* ============================================
+   Programs List Layout
+   ============================================ */
+.programs-list {
+  max-width: var(--max-width-container);
+  margin: 0 auto;
+}
+
+.program-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-xl);
+  padding: var(--spacing-lg);
+  background-color: var(--background-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+.program-item:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--box-shadow-hover);
+}
+
+.program-item__content {
+  flex: 1;
+}
+
+.program-item__title {
+  font-size: var(--font-size-h2);
+  color: var(--primary-dark);
+  margin-bottom: var(--spacing-xs);
+}
+
+.program-item__meta {
+  color: var(--text-light);
+  font-size: var(--font-size-small);
+  margin-bottom: var(--spacing-sm);
+  font-weight: 500;
+}
+
+.program-item__description {
+  color: var(--text-color);
+  line-height: var(--line-height-base);
+  margin-bottom: var(--spacing-md);
+}
+
+.program-item__image {
+  width: 100%;
+  overflow: hidden;
+  border-radius: var(--border-radius);
+}
+
+.program-item__image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+/* ============================================
    Testimonials
    ============================================ */
 .testimonials {
@@ -859,6 +920,26 @@ a[href^="http"]::after {
   .footer__grid {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  /* Programs List - Horizontal Layout */
+  .program-item {
+    flex-direction: row;
+    align-items: center;
+    gap: var(--spacing-lg);
+  }
+
+  .program-item__content {
+    flex: 1;
+  }
+
+  .program-item__image {
+    width: 45%;
+    flex-shrink: 0;
+  }
+
+  .program-item--reverse {
+    flex-direction: row-reverse;
+  }
 }
 
 /* ============================================
@@ -898,6 +979,15 @@ a[href^="http"]::after {
 
   .footer__grid {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* Programs List - Enhanced Layout for Larger Screens */
+  .program-item__image {
+    width: 40%;
+  }
+
+  .program-item__title {
+    font-size: var(--font-size-h2);
   }
 }
 
