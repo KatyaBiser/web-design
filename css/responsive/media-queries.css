@@ -84,7 +84,7 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-  /* Main grid for programs - 9 items with 2 spanning multiple cells */
+  /* Main grid for programs - 8 therapists with first spanning 2 columns */
   .grid--programs {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
@@ -93,12 +93,6 @@
   /* First card spans 2 columns */
   .grid--programs .card:first-child {
     grid-column: 1 / 3;
-  }
-
-  /* Last card spans 2 rows */
-  .grid--programs .card:last-child {
-    grid-column: 3 / 4;
-    grid-row: 2 / 4;
   }
 
   .grid--therapists {
