@@ -30,11 +30,18 @@ jobs:
           cp -r css html/
           cp -r images html/
 
-          # Update paths in HTML files for production (remove ../ prefix)
+          # Update paths in HTML files for production
           cd html
-          find . -name "*.html" -type f -exec sed -i 's|href="../css/|href="css/|g' {} +
-          find . -name "*.html" -type f -exec sed -i 's|src="../images/|src="images/|g' {} +
-          find . -name "*.html" -type f -exec sed -i 's|href="../images/|href="images/|g' {} +
+          
+          # For files in root (index.html): ../ → ""
+          find . -maxdepth 1 -name "*.html" -type f -exec sed -i 's|href="../css/|href="css/|g' {} +
+          find . -maxdepth 1 -name "*.html" -type f -exec sed -i 's|src="../images/|src="images/|g' {} +
+          find . -maxdepth 1 -name "*.html" -type f -exec sed -i 's|href="../images/|href="images/|g' {} +
+          
+          # For files in subdirectories: ../../ → ""
+          find ./therapists ./programs ./pages -name "*.html" -type f -exec sed -i 's|href="../../css/|href="../css/|g' {} +
+          find ./therapists ./programs ./pages -name "*.html" -type f -exec sed -i 's|src="../../images/|src="../images/|g' {} +
+          find ./therapists ./programs ./pages -name "*.html" -type f -exec sed -i 's|href="../../images/|href="../images/|g' {} +
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
