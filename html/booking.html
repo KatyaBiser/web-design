@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Book your free consultation at Rehab from Vibe - Start your journey to code recovery today.">
+  <title>Book Consultation - Rehab from Vibe</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <!-- Skip to main content for accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="header" role="banner">
+    <div class="container header__container">
+      <a href="index.html" class="header__logo" aria-label="Rehab from Vibe - Home">
+        Rehab from Vibe
+      </a>
+
+      <nav class="nav" role="navigation" aria-label="Main navigation">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="therapists.html" class="nav__link">Our Therapists</a>
+          </li>
+          <li class="nav__item">
+            <a href="programs.html" class="nav__link">Programs</a>
+          </li>
+          <li class="nav__item">
+            <a href="contact.html" class="nav__link">Contact</a>
+          </li>
+          <li class="nav__item">
+            <a href="booking.html" class="nav__link nav__link--active" aria-current="page">Book Consultation</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content" class="main" role="main">
+    <div class="container">
+
+      <!-- Search Bar -->
+      <div class="search" role="search">
+        <form class="search__form" action="search-results.html" method="get">
+          <label for="search-input" class="sr-only">Search our site</label>
+          <input
+            type="search"
+            id="search-input"
+            name="q"
+            class="search__input"
+            placeholder="Search programs, therapists, resources..."
+            aria-label="Search"
+          >
+          <button type="submit" class="search__button">Search</button>
+        </form>
+      </div>
+
+      <!-- Page Header -->
+      <section class="section">
+        <h1 class="section__title">Book Your Free Consultation</h1>
+        <p class="section__intro">
+          Take the first step toward code recovery. Our free 30-minute consultation
+          will help you understand your current challenges and find the right program
+          for your needs. No commitment required.
+        </p>
+      </section>
+
+      <!-- Benefits Section -->
+      <section class="section">
+        <h2 class="section__title">What to Expect</h2>
+        <div class="grid">
+
+          <article class="card">
+            <h3 class="card__title">Assessment</h3>
+            <p class="card__description">
+              We'll discuss your current coding practices, challenges with AI tools,
+              and areas where you'd like to improve.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3 class="card__title">Personalized Plan</h3>
+            <p class="card__description">
+              Our therapist will recommend specific programs tailored to your
+              experience level and recovery goals.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3 class="card__title">Q&A Session</h3>
+            <p class="card__description">
+              Ask any questions about our programs, methodology, pricing,
+              and what success looks like for your situation.
+            </p>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- Booking Form -->
+      <section class="section">
+        <h2 class="section__title">Schedule Your Consultation</h2>
+
+        <form class="form" action="#" method="post">
+
+          <!-- Personal Information -->
+          <fieldset style="border: none; padding: 0;">
+            <legend style="font-size: var(--font-size-h3); font-weight: 600; margin-bottom: var(--spacing-md); color: var(--primary-dark);">
+              Personal Information
+            </legend>
+
+            <div class="form__group">
+              <label for="first-name" class="form__label">
+                First Name <span aria-label="required">*</span>
+              </label>
+              <input
+                type="text"
+                id="first-name"
+                name="first-name"
+                class="form__input"
+                required
+                aria-required="true"
+                placeholder="John"
+              >
+            </div>
+
+            <div class="form__group">
+              <label for="last-name" class="form__label">
+                Last Name <span aria-label="required">*</span>
+              </label>
+              <input
+                type="text"
+                id="last-name"
+                name="last-name"
+                class="form__input"
+                required
+                aria-required="true"
+                placeholder="Doe"
+              >
+            </div>
+
+            <div class="form__group">
+              <label for="booking-email" class="form__label">
+                Email Address <span aria-label="required">*</span>
+              </label>
+              <input
+                type="email"
+                id="booking-email"
+                name="email"
+                class="form__input"
+                required
+                aria-required="true"
+                placeholder="john.doe@example.com"
+              >
+              <span class="form__hint">We'll send confirmation to this address</span>
+            </div>
+
+            <div class="form__group">
+              <label for="booking-phone" class="form__label">
+                Phone Number <span aria-label="required">*</span>
+              </label>
+              <input
+                type="tel"
+                id="booking-phone"
+                name="phone"
+                class="form__input"
+                required
+                aria-required="true"
+                placeholder="+1 (555) 123-4567"
+              >
+              <span class="form__hint">We'll call if we need to reschedule</span>
+            </div>
+          </fieldset>
+
+          <!-- Consultation Preferences -->
+          <fieldset style="border: none; padding: 0; margin-top: var(--spacing-lg);">
+            <legend style="font-size: var(--font-size-h3); font-weight: 600; margin-bottom: var(--spacing-md); color: var(--primary-dark);">
+              Consultation Preferences
+            </legend>
+
+            <div class="form__group">
+              <label for="therapist" class="form__label">
+                Preferred Therapist
+              </label>
+              <select
+                id="therapist"
+                name="therapist"
+                class="form__select"
+              >
+                <option value="">No preference - Match me with the best fit</option>
+                <option value="dr-html">Dr. Emma HTML - Semantic Markup</option>
+                <option value="prof-grid">Prof. Marcus Grid - CSS Layout</option>
+                <option value="dr-accessible">Dr. Aria Accessible - Accessibility</option>
+                <option value="dr-flex">Dr. Flex Box - Flexbox Specialist</option>
+                <option value="specialist-root">Specialist Val Root - CSS Architecture</option>
+                <option value="dr-security">Dr. Sam Security - Code Security</option>
+                <option value="prof-perf">Prof. Petra Perf - Performance</option>
+                <option value="dr-mindful">Dr. Min Code - Mindful Coding</option>
+              </select>
+              <span class="form__hint">Optional - We can match you based on your needs</span>
+            </div>
+
+            <div class="form__group">
+              <label for="program-interest" class="form__label">
+                Program of Interest
+              </label>
+              <select
+                id="program-interest"
+                name="program-interest"
+                class="form__select"
+              >
+                <option value="">Not sure yet</option>
+                <option value="semantic-html">Semantic HTML Recovery</option>
+                <option value="css-grid">CSS Grid Mastery</option>
+                <option value="bootstrap-detox">Bootstrap Detox</option>
+                <option value="accessibility">Accessibility First</option>
+                <option value="mindful-coding">Mindful Coding</option>
+                <option value="security">Security Awareness</option>
+                <option value="performance">Performance Optimization</option>
+                <option value="flexbox">Flexbox Fundamentals</option>
+                <option value="complete">Complete Recovery Program</option>
+              </select>
+            </div>
+
+            <div class="form__group">
+              <label for="consultation-date" class="form__label">
+                Preferred Date <span aria-label="required">*</span>
+              </label>
+              <input
+                type="date"
+                id="consultation-date"
+                name="consultation-date"
+                class="form__input"
+                required
+                aria-required="true"
+                min="2025-01-17"
+              >
+              <span class="form__hint">Consultations available Monday - Saturday</span>
+            </div>
+
+            <div class="form__group">
+              <label for="consultation-time" class="form__label">
+                Preferred Time <span aria-label="required">*</span>
+              </label>
+              <select
+                id="consultation-time"
+                name="consultation-time"
+                class="form__select"
+                required
+                aria-required="true"
+              >
+                <option value="">-- Please Select --</option>
+                <option value="09:00">9:00 AM PST</option>
+                <option value="10:00">10:00 AM PST</option>
+                <option value="11:00">11:00 AM PST</option>
+                <option value="13:00">1:00 PM PST</option>
+                <option value="14:00">2:00 PM PST</option>
+                <option value="15:00">3:00 PM PST</option>
+                <option value="16:00">4:00 PM PST</option>
+                <option value="17:00">5:00 PM PST</option>
+              </select>
+            </div>
+
+            <div class="form__group">
+              <label for="consultation-format" class="form__label">
+                Consultation Format <span aria-label="required">*</span>
+              </label>
+              <select
+                id="consultation-format"
+                name="consultation-format"
+                class="form__select"
+                required
+                aria-required="true"
+              >
+                <option value="">-- Please Select --</option>
+                <option value="video">Video Call (Zoom)</option>
+                <option value="phone">Phone Call</option>
+                <option value="in-person">In-Person (San Francisco Office)</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <!-- About Your Situation -->
+          <fieldset style="border: none; padding: 0; margin-top: var(--spacing-lg);">
+            <legend style="font-size: var(--font-size-h3); font-weight: 600; margin-bottom: var(--spacing-md); color: var(--primary-dark);">
+              Tell Us About Your Situation
+            </legend>
+
+            <div class="form__group">
+              <label for="experience-level" class="form__label">
+                Coding Experience Level <span aria-label="required">*</span>
+              </label>
+              <select
+                id="experience-level"
+                name="experience-level"
+                class="form__select"
+                required
+                aria-required="true"
+              >
+                <option value="">-- Please Select --</option>
+                <option value="beginner">Beginner (0-1 years)</option>
+                <option value="intermediate">Intermediate (1-3 years)</option>
+                <option value="advanced">Advanced (3-5 years)</option>
+                <option value="expert">Expert (5+ years)</option>
+              </select>
+            </div>
+
+            <div class="form__group">
+              <label for="ai-usage" class="form__label">
+                How often do you use AI coding assistants?
+              </label>
+              <select
+                id="ai-usage"
+                name="ai-usage"
+                class="form__select"
+              >
+                <option value="">Prefer not to say</option>
+                <option value="constantly">Constantly - For almost every line</option>
+                <option value="frequently">Frequently - Multiple times per hour</option>
+                <option value="sometimes">Sometimes - A few times per day</option>
+                <option value="rarely">Rarely - Only for specific tasks</option>
+                <option value="never">Never - I avoid AI tools</option>
+              </select>
+            </div>
+
+            <div class="form__group">
+              <label for="main-challenges" class="form__label">
+                What are your main challenges with coding? <span aria-label="required">*</span>
+              </label>
+              <textarea
+                id="main-challenges"
+                name="main-challenges"
+                class="form__textarea"
+                required
+                aria-required="true"
+                placeholder="Tell us about your struggles with vibe-coding, dependency on AI, or specific areas where you want to improve..."
+              ></textarea>
+              <span class="form__hint">Be as detailed as you like - this helps us prepare for your consultation</span>
+            </div>
+
+            <div class="form__group">
+              <label for="goals" class="form__label">
+                What do you hope to achieve?
+              </label>
+              <textarea
+                id="goals"
+                name="goals"
+                class="form__textarea"
+                placeholder="Better understanding of fundamentals, writing cleaner code, improving accessibility, breaking free from frameworks..."
+              ></textarea>
+            </div>
+
+            <div class="form__group">
+              <label for="referral" class="form__label">
+                How did you hear about us?
+              </label>
+              <select
+                id="referral"
+                name="referral"
+                class="form__select"
+              >
+                <option value="">-- Please Select --</option>
+                <option value="search">Search Engine</option>
+                <option value="social">Social Media</option>
+                <option value="friend">Friend or Colleague</option>
+                <option value="blog">Blog or Article</option>
+                <option value="conference">Conference or Event</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <!-- Agreement -->
+          <div class="form__group" style="margin-top: var(--spacing-lg);">
+            <label style="display: flex; align-items: flex-start; gap: var(--spacing-xs); cursor: pointer;">
+              <input
+                type="checkbox"
+                name="terms"
+                required
+                aria-required="true"
+                style="margin-top: 4px;"
+              >
+              <span>
+                I understand that this is a free consultation and I am not committing
+                to any program. I agree to receive email confirmation and reminders
+                about my appointment. <span aria-label="required">*</span>
+              </span>
+            </label>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="form__group">
+            <button type="submit" class="btn btn--large btn--block">
+              Book My Free Consultation
+            </button>
+          </div>
+
+          <p style="text-align: center; color: var(--text-light); font-size: var(--font-size-small); margin-top: var(--spacing-md);">
+            <span aria-label="required">*</span> Required fields
+          </p>
+
+        </form>
+      </section>
+
+      <!-- Additional Info -->
+      <aside class="section" style="background-color: var(--background-light); padding: var(--spacing-lg); border-radius: var(--border-radius);">
+        <h2 class="section__title">Have Questions?</h2>
+        <p style="text-align: center; margin-bottom: var(--spacing-md);">
+          If you have any questions about the consultation process or need help
+          choosing the right time, please don't hesitate to contact us.
+        </p>
+        <div style="text-align: center;">
+          <a href="contact.html" class="btn btn--secondary">Contact Us First</a>
+        </div>
+      </aside>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+
+      <div class="footer__grid">
+
+        <section class="footer__section">
+          <h3 class="footer__section-title">Quick Links</h3>
+          <ul class="footer__list">
+            <li><a href="index.html" class="footer__link">Home</a></li>
+            <li><a href="therapists.html" class="footer__link">Our Therapists</a></li>
+            <li><a href="programs.html" class="footer__link">Programs</a></li>
+            <li><a href="contact.html" class="footer__link">Contact</a></li>
+          </ul>
+        </section>
+
+        <section class="footer__section">
+          <h3 class="footer__section-title">Programs</h3>
+          <ul class="footer__list">
+            <li><a href="program-detail.html" class="footer__link">Semantic HTML</a></li>
+            <li><a href="program-detail.html" class="footer__link">CSS Mastery</a></li>
+            <li><a href="program-detail.html" class="footer__link">Accessibility</a></li>
+            <li><a href="program-detail.html" class="footer__link">Clean Code</a></li>
+          </ul>
+        </section>
+
+        <section class="footer__section">
+          <h3 class="footer__section-title">Resources</h3>
+          <ul class="footer__list">
+            <li><a href="#" class="footer__link">Blog</a></li>
+            <li><a href="#" class="footer__link">Research</a></li>
+            <li><a href="#" class="footer__link">FAQ</a></li>
+            <li><a href="booking.html" class="footer__link">Book Now</a></li>
+          </ul>
+        </section>
+
+        <section class="footer__section">
+          <h3 class="footer__section-title">Contact</h3>
+          <ul class="footer__list">
+            <li><a href="contact.html" class="footer__link">Get in Touch</a></li>
+            <li><a href="mailto:info@rehabfromvibe.edu" class="footer__link">info@rehabfromvibe.edu</a></li>
+            <li><a href="tel:+15551234567" class="footer__link">+1 (555) 123-4567</a></li>
+          </ul>
+        </section>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__student-notice">
+          ⚠️ STUDENT PROJECT - Created for Educational Purposes
+        </p>
+        <p class="footer__authors">
+          Created by Katya Biser | Web Design Course 2025
+        </p>
+        <p class="footer__authors">
+          <time datetime="2025">© 2025</time> Rehab from Vibe. All rights reserved.
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>
