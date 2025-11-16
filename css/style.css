@@ -60,6 +60,16 @@
   box-sizing: border-box;
 }
 
+/* Remove default focus outline on click, but keep for keyboard navigation */
+*:focus:not(:focus-visible) {
+  outline: none;
+}
+
+*:focus-visible {
+  outline: 2px solid var(--primary-light);
+  outline-offset: 2px;
+}
+
 html {
   font-size: var(--base-font-size);
   scroll-behavior: smooth;
@@ -120,7 +130,17 @@ a:focus {
 }
 
 a:focus {
-  outline: 2px solid var(--primary-color);
+  outline: 2px solid var(--primary-light);
+  outline-offset: 2px;
+}
+
+/* Remove default browser outline on click, but keep for keyboard navigation */
+a:focus:not(:focus-visible) {
+  outline: none;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--primary-light);
   outline-offset: 2px;
 }
 
@@ -567,6 +587,16 @@ a:focus {
   color: white;
   transform: translateY(-1px);
   box-shadow: var(--box-shadow);
+}
+
+/* Remove outline on click for buttons, keep for keyboard */
+.btn:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--primary-light);
+  outline-offset: 3px;
 }
 
 .btn--secondary {
