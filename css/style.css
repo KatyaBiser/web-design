@@ -724,6 +724,92 @@ a:focus {
 }
 
 /* ============================================
+   Glossary (Definition Lists)
+   ============================================ */
+.glossary {
+  max-width: var(--max-width-content);
+  margin: 0 auto;
+}
+
+.glossary__term {
+  font-weight: 700;
+  font-size: var(--font-size-large);
+  color: var(--primary-dark);
+  margin-top: var(--spacing-md);
+  margin-bottom: var(--spacing-xs);
+}
+
+.glossary__definition {
+  margin-left: var(--spacing-md);
+  padding-left: var(--spacing-sm);
+  border-left: 3px solid var(--primary-light);
+  color: var(--text-color);
+  line-height: var(--line-height-base);
+}
+
+/* Every other term has different background - using :nth-child */
+.glossary__term:nth-child(4n+1) {
+  color: var(--secondary-dark);
+}
+
+/* Direct child combinator > example */
+.glossary > dt {
+  font-style: normal;
+}
+
+/* Adjacent sibling combinator + example */
+.glossary__term + .glossary__definition {
+  margin-bottom: var(--spacing-md);
+}
+
+/* ============================================
+   Advanced CSS Selectors Examples
+   ============================================ */
+
+/* Attribute selector - style PDF links differently */
+a[href$=".pdf"]::after {
+  content: " 📄";
+  font-size: 0.8em;
+}
+
+/* Attribute selector - external links */
+a[href^="http"]::after {
+  content: " ↗";
+  font-size: 0.8em;
+  opacity: 0.6;
+}
+
+/* Don't add icons to logo or navigation links */
+.header__logo[href^="http"]::after,
+.nav__link[href^="http"]::after {
+  content: none;
+}
+
+/* :not() pseudo-class example */
+.btn:not(.btn--secondary) {
+  /* Primary button specific styles already defined */
+}
+
+/* Striped table rows using :nth-child */
+.table tbody tr:nth-child(odd) {
+  background-color: var(--background-light);
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: var(--background-color);
+}
+
+/* Last child of a list */
+.footer__list > li:last-child {
+  margin-bottom: 0;
+}
+
+/* First child emphasis */
+.testimonial:first-child {
+  border-left-width: 6px;
+}
+
+/* ============================================
    Responsive Design - Tablet (768px+)
    ============================================ */
 @media (min-width: 768px) {
