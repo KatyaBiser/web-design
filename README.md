@@ -1,10 +1,10 @@
-# Rehab from Vibe - Web Design Project
+# Rehab from Vibe Coding - Web Design Project
 
 **Student Project** | Web Design Course 2025 | [Created by Katya Biser](https://katyabiser.github.io/web-design/)
 
 ## Project Overview
 
-"Rehab from Vibe" is a fictional rehabilitation center website designed to help developers break free from AI-assisted coding dependency (vibe-coding). This project was created as a student assignment to demonstrate mastery of HTML5 and CSS3 fundamentals without relying on frameworks or AI-generated code.
+"Rehab from Vibe Coding" is a fictional rehabilitation center website designed to help developers break free from AI-assisted coding dependency (vibe-coding). This project was created as a student assignment to demonstrate mastery of HTML5 and CSS3 fundamentals without relying on frameworks or AI-generated code.
 
 The website concept is intentionally ironic - it's about recovering from AI dependency, yet the project itself showcases what can be achieved through thoughtful, manual coding practices.
 
@@ -214,4 +214,4 @@ This is an educational project. All content is fictional and created for demonst
 
 ---
 
-© 2025 Rehab from Vibe - Student Project
+© 2025 Rehab from Vibe Coding - Student Project
