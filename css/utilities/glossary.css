@@ -22,11 +22,6 @@
   line-height: var(--line-height-base);
 }
 
-/* Every other term has different background - using :nth-child */
-.glossary__term:nth-child(4n+1) {
-  color: var(--secondary-dark);
-}
-
 /* Direct child combinator > example */
 .glossary > dt {
   font-style: normal;
