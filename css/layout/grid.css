@@ -31,11 +31,21 @@
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
   transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+  position: relative;
+  cursor: pointer;
 }
 
 .program-item:hover {
   transform: translateY(-4px);
   box-shadow: var(--box-shadow-hover);
+}
+
+/* Make entire program card clickable */
+.program-item .btn::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
 }
 
 .program-item__content {
