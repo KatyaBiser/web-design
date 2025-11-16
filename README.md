@@ -1,6 +1,6 @@
 # Rehab from Vibe - Web Design Project
 
-**Student Project** | Web Design Course 2025 | Created by Katya Biser
+**Student Project** | Web Design Course 2025 | [Created by Katya Biser](https://katyabiser.github.io/web-design/)
 
 ## Project Overview
 
