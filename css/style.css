@@ -378,9 +378,9 @@ a:focus {
 }
 
 .therapist-card__image {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  border-radius: var(--border-radius);
   object-fit: cover;
   margin: 0 auto var(--spacing-sm);
   border: 4px solid var(--primary-light);
@@ -500,9 +500,9 @@ a:focus {
 }
 
 .detail__image {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  border-radius: var(--border-radius);
   object-fit: cover;
   margin: 0 auto var(--spacing-md);
   display: block;
